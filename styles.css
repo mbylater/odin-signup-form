@@ -3,10 +3,16 @@
   margin: 0px;
 }
 
+ @font-face {
+        font-family: "Norse";
+        scr: url("./fonts/Norse-Bold.otf") format("otf");
+        font-style: normal;
+    }
+
 body {
     display: flex;
     height: 100vh;
-    width: 100dw;
+    width: 100vw;
 }
 
 .split-screen {
@@ -34,11 +40,6 @@ body {
 }
 
 .card-body {
-    @font-face {
-        font-family: "Norse";
-        scr: url("./fonts/Norse-Bold.otf") format("otf");
-        font-style: normal;
-    }
     position: absolute;
     width: 100%;
     top: 16rem;
@@ -65,7 +66,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
 }
 
 .section-one {
@@ -73,13 +73,54 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
-    padding-bottom: 20px;
+    padding: 32px;
+    background-color: rgb(244, 244, 244);
 }
 
 .section-two {
-    flex: 1;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    background-color: white;
+    padding: 32px;
+    box-shadow: 0px 4px 8px 0px lightgrey;
+    align-self: flex-start;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    gap: 20px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 280px;
+}
+
+input:focus {
+  border-color: #596D48;
+  outline: none;
+  box-shadow: 0 0 4px rgba(89, 109, 72, 0.6);
 }
 
 .section-three {
@@ -87,13 +128,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items:start;
-    padding-top: 20px;
+    padding: 32px;
+    gap: 24px;
+    background-color: rgb(244, 244, 244);
 }
 
 #create-account {
     height: min-content;
-    padding: 8px;
+    padding: 16px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    border: #596D48;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 0px rgb(185, 185, 185);
 }
+
 
 
 
